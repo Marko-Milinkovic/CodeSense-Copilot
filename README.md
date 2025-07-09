@@ -18,9 +18,9 @@
 
 ## Project Overview
 
-**CodeSense Copilot** is an **AI-powered**, console-based autocomplete engine meticulously crafted to revolutionize coding efficiency. Leveraging a robust Trie data structure, sophisticated fuzzy matching algorithms, and adaptive, dynamic frequency-based ranking, it delivers **predictive, intuitively context-aware, and exceptionally relevant** code completion, empowering developers with intelligent, real-time assistance directly within the command line.
+**CodeSense Copilot** represents a sophisticated **AI-powered**, console-native autocomplete engine, engineered for peak coding efficiency. Its foundational intelligence is rooted in an **optimized Trie tree data structure** that enables high-speed prefix lookups, integrated with a **recursive fuzzy matching algorithm (e.g., Levenshtein distance)** capable of identifying suggestions even with significant input discrepancies through precise edit-distance calculations. The system's adaptive nature is driven by an advanced **algorithmic learning mechanism** that dynamically adjusts suggestion relevance. It continuously prioritizes frequently used words and learned selections, thereby personalizing the developer's experience over time.
 
-This project goes beyond basic autocompletion, offering a rich interactive experience with syntax highlighting and smart input handling, aiming to provide a powerful development environment even in a console setting.
+Architecturally, CodeSense Copilot demonstrates robust systems programming principles. It directly manipulates the console buffer using Windows API functions, yielding immediate and responsive user feedback. Real-time character-by-character input processing and precise cursor control facilitate a fluid console editing experience. Furthermore, the engine integrates compiler theory components: an embedded lexer performs token classification for syntax highlighting with classified tokens then rendered in distinct colors for enhanced visual parsing, complemented by heuristic-driven smart indentation for C++ scope and control flow constructs. This technical architecture transforms the terminal into a capable development environment, supported by efficient memory management for persistent data structures.
 
 ---
 
