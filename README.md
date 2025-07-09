@@ -10,26 +10,22 @@ This project goes beyond basic autocompletion, offering a rich interactive exper
 
 ---
 
-## ✨ Features
+## Features
 
 * **Intelligent Autocomplete:**
-    * **Fuzzy Matching:** Provides suggestions even with typos or partial input using an advanced recursive edit-distance algorithm.
-    * **Frequency-Based Ranking:** Prioritizes frequently used words and learned selections, making suggestions more relevant and adapting to your coding patterns.
+    * **Fuzzy Matching and Typo Tolerance:** Employs a sophisticated recursive **edit-distance algorithm** (e.g., Levenshtein distance) to identify the closest dictionary matches, even with typo errors or parial input. 
+    * **Adaptive Learning & Personalization:** Prioritizes frequently used words and learned selections, making suggestions more relevant and adapting to user's coding patterns.
     * **Prefix-Awareness:** Quickly narrows down suggestions based on the current word's prefix.
-* **Real-time Console Editor:**
-    * Direct manipulation of the console buffer using the Windows API (`<windows.h>`, `_getch()`) for immediate feedback.
-    * Seamless single-line input handling with responsive cursor control and backspace functionality.
-* **Syntax Highlighting:**
+    * **Balanced Scoring for Relevance:** A custom scoring algorithm intelligently combines the word's learned frequency with its edit distance from the input ensuring that suggestions are optimally ranked, prioritizing highly relevant and frequently used terms while still offering accurate matches even with minor discrepancies.
+    * **Dictionary security**: Persistent dictionary that saves learned word frequencies.
+* **Systems Programming:**
+    * **Direct Console Interaction:** Leverages **Windows API functions** (`<windows.h>`, `_getch()`) for direct manipulation of the console buffer, enabling immediate and highly responsive user feedback.
+    * **Low-Level Console Control:** Implements precise cursor positioning and manipulation, providing fine-grained control over the console display for an enhanced text editing experience.
+    * **Real-time Character-by-Character Input:** Processes input in real-time, handling each character individually for instantaneous response and dynamic display updates without buffering delays.
+    * **Efficient Memory Management:** Manages memory for persistent data structure.
+* **Compiler/Language Theory:**
     * Built-in lexer/tokenizer intelligently categorizes input into various token types (keywords, comments, strings, numbers, operators, punctuation, preprocessor directives).
-    * Applies distinct colors to different token types for enhanced readability (requires a compatible terminal).
-* **Smart Indentation:**
-    * Automatic indentation adjustment based on C++ scope delimiters (e.g., `{`).
-    * Heuristic-based indentation for common control flow structures (`for`, `while`, `if`, `switch`).
-* **Basic Auto-Closing:**
-    * Automatically closes double quotes (`"`) and single quotes (`'`) for common string/char literal entry.
-* **Persistent Dictionary:**
-    * Saves and loads the autocomplete dictionary, including learned word frequencies, to/from a file, ensuring your preferences persist across sessions.
-
+   
 ---
 
 ## ⚙️ How It Works
