@@ -1,4 +1,18 @@
-# CodeSense Copilot 
+# CodeSense Copilot [![Made with C++](https://img.shields.io/badge/Made%20with-C%2B%2B-blue.svg)](https://isocpp.org/)
+
+## Table of Contents
+* [Project Overview](#project-overview)
+* [Features](#features)
+* [How It Works: Algorithmic Depth](#how-it-works-algorithmic-depth)
+    * [1. The Trie Data Structure](#1-the-trie-data-structure-foundation-of-prefix-search)
+    * [2. Adaptive Learning and Frequency-Based Personalization](#2-adaptive-learning-and-frequency-based-personalization)
+    * [3. Advanced Fuzzy Matching Algorithm](#3-advanced-fuzzy-matching-algorithm-resilient-suggestions)
+    * [4. Comprehensive Scoring and Ranking Mechanisms](#4-comprehensive-scoring-and-ranking-mechanisms)
+    * [5. Persistent Dictionary Storage](#5-persistent-dictionary-storage)
+* [Getting Started](#getting-started)
+* [Future Enhancements](#future-enhancements)
+* [Contributing](#contributing)
+* [License](#license)
 
 ---
 
@@ -89,6 +103,11 @@ To ensure that learned frequencies and the entire autocomplete dictionary persis
 
 ## Getting Started
 
+### Prerequisites
+* **Operating System:** Windows 10 or later (due to direct Windows API usage).
+* **Compiler:** MSVC C++ compiler (comes with Visual Studio).
+* **IDE:** Visual Studio 2019 or newer (recommended for seamless build).
+
 To build and run this project:
 
 1.  **Clone the Repository:**
@@ -116,5 +135,26 @@ To build and run this project:
 * **Cross-Platform Compatibility:** Adapt the console rendering logic to work on Linux/macOS using libraries like NCurses or similar.
 * **Configurable Settings:** Allow users to customize `max_edits`, `alpha` values, and highlighting colors.
 * **Dynamic Keyword Loading:** Load keywords from external files or C++ standard libraries.
+
+---
+
+## Contributing
+
+Contributions to CodeSense Copilot are wellcomed! If you'd like to contribute, please follow these steps:
+
+1.  Fork the repository.
+2.  Create a new branch (`git checkout -b feature/your-feature-name`).
+3.  Make your changes.
+4.  Commit your changes (`git commit -m 'Add new feature X'`).
+5.  Push to the branch (`git push origin feature/your-feature-name`).
+6.  Open a Pull Request.
+
+Please ensure your code adheres to good practices and includes relevant tests where applicable.
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ---
